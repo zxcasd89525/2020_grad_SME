@@ -1,0 +1,806 @@
+
+                           Design Compiler Graphical 
+                                 DC Ultra (TM)
+                                  DFTMAX (TM)
+                              Power Compiler (TM)
+                                 DesignWare (R)
+                                 DC Expert (TM)
+                               Design Vision (TM)
+                               HDL Compiler (TM)
+                               VHDL Compiler (TM)
+                                  DFT Compiler
+                               Design Compiler(R)
+
+                 Version Q-2019.12 for linux64 - Nov 26, 2019 
+
+                    Copyright (c) 1988 - 2019 Synopsys, Inc.
+   This software and the associated documentation are proprietary to Synopsys,
+ Inc. This software may only be used in accordance with the terms and conditions
+ of a written license agreement with Synopsys, Inc. All other use, reproduction,
+            or distribution of this software is strictly prohibited.
+Initializing...
+Initializing gui preferences from file  /home/t107360216/.synopsys_dv_prefs.tcl
+#Read All Files
+read_file -format verilog  SME.v
+Loading db file '/home/t107360216/Desktop/cell_lib/CBDK_IC_Contest_v2.5/SynopsysDC/db/slow.db'
+Loading db file '/usr/cad/synopsys/synthesis/cur/libraries/syn/dw_foundation.sldb'
+Loading db file '/usr/cad/synopsys/synthesis/cur/libraries/syn/gtech.db'
+Loading db file '/usr/cad/synopsys/synthesis/cur/libraries/syn/standard.sldb'
+  Loading link library 'slow'
+  Loading link library 'gtech'
+Loading verilog file '/home/t107360216/Desktop/qiyou/2020_grad_cell/SME.v'
+Detecting input file type automatically (-rtl or -netlist).
+Reading with Presto HDL Compiler (equivalent to -rtl option).
+Running PRESTO HDLC
+Compiling source file /home/t107360216/Desktop/qiyou/2020_grad_cell/SME.v
+Warning:  /home/t107360216/Desktop/qiyou/2020_grad_cell/SME.v:239: signed to unsigned conversion occurs. (VER-318)
+Warning:  /home/t107360216/Desktop/qiyou/2020_grad_cell/SME.v:253: signed to unsigned conversion occurs. (VER-318)
+Warning:  /home/t107360216/Desktop/qiyou/2020_grad_cell/SME.v:253: signed to unsigned conversion occurs. (VER-318)
+Warning:  /home/t107360216/Desktop/qiyou/2020_grad_cell/SME.v:266: signed to unsigned conversion occurs. (VER-318)
+Warning:  /home/t107360216/Desktop/qiyou/2020_grad_cell/SME.v:290: signed to unsigned conversion occurs. (VER-318)
+Warning:  /home/t107360216/Desktop/qiyou/2020_grad_cell/SME.v:280: signed to unsigned conversion occurs. (VER-318)
+Warning:  /home/t107360216/Desktop/qiyou/2020_grad_cell/SME.v:280: signed to unsigned conversion occurs. (VER-318)
+Warning:  /home/t107360216/Desktop/qiyou/2020_grad_cell/SME.v:299: signed to unsigned conversion occurs. (VER-318)
+Warning:  /home/t107360216/Desktop/qiyou/2020_grad_cell/SME.v:298: signed to unsigned conversion occurs. (VER-318)
+
+Statistics for case statements in always block at line 45 in file
+	'/home/t107360216/Desktop/qiyou/2020_grad_cell/SME.v'
+===============================================
+|           Line           |  full/ parallel  |
+===============================================
+|            46            |    auto/auto     |
+===============================================
+Warning:  /home/t107360216/Desktop/qiyou/2020_grad_cell/SME.v:276: Out of bounds bit select stringdata[-1], valid bounds are [31:0]. (ELAB-312)
+
+Inferred memory devices in process
+	in routine SME line 38 in file
+		'/home/t107360216/Desktop/qiyou/2020_grad_cell/SME.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|  current_state_reg  | Flip-flop |   4   |  Y  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+
+Inferred memory devices in process
+	in routine SME line 70 in file
+		'/home/t107360216/Desktop/qiyou/2020_grad_cell/SME.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|   stringdata_reg    | Flip-flop |  256  |  Y  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+
+Inferred memory devices in process
+	in routine SME line 79 in file
+		'/home/t107360216/Desktop/qiyou/2020_grad_cell/SME.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|    stringlen_reg    | Flip-flop |   6   |  Y  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+
+Inferred memory devices in process
+	in routine SME line 87 in file
+		'/home/t107360216/Desktop/qiyou/2020_grad_cell/SME.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|   patternlen_reg    | Flip-flop |   5   |  Y  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+
+Inferred memory devices in process
+	in routine SME line 95 in file
+		'/home/t107360216/Desktop/qiyou/2020_grad_cell/SME.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|      valid_reg      | Flip-flop |   1   |  N  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+
+Inferred memory devices in process
+	in routine SME line 102 in file
+		'/home/t107360216/Desktop/qiyou/2020_grad_cell/SME.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|      match_reg      | Flip-flop |   1   |  N  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+
+Inferred memory devices in process
+	in routine SME line 108 in file
+		'/home/t107360216/Desktop/qiyou/2020_grad_cell/SME.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|   match_index_reg   | Flip-flop |   5   |  Y  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+
+Inferred memory devices in process
+	in routine SME line 155 in file
+		'/home/t107360216/Desktop/qiyou/2020_grad_cell/SME.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|   first_flag_reg    | Flip-flop |   1   |  N  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+
+Inferred memory devices in process
+	in routine SME line 162 in file
+		'/home/t107360216/Desktop/qiyou/2020_grad_cell/SME.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|    star_flag_reg    | Flip-flop |   1   |  N  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+
+Inferred memory devices in process
+	in routine SME line 169 in file
+		'/home/t107360216/Desktop/qiyou/2020_grad_cell/SME.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|   star_first_reg    | Flip-flop |   1   |  N  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+
+Inferred memory devices in process
+	in routine SME line 177 in file
+		'/home/t107360216/Desktop/qiyou/2020_grad_cell/SME.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|     starlen_reg     | Flip-flop |   5   |  Y  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+
+Inferred memory devices in process
+	in routine SME line 184 in file
+		'/home/t107360216/Desktop/qiyou/2020_grad_cell/SME.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|    star_pos_reg     | Flip-flop |   5   |  Y  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+
+Inferred memory devices in process
+	in routine SME line 231 in file
+		'/home/t107360216/Desktop/qiyou/2020_grad_cell/SME.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|   index_list_reg    | Flip-flop |  32   |  Y  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+Statistics for MUX_OPs
+======================================================
+| block name/line  | Inputs | Outputs | # sel inputs |
+======================================================
+|     SME/253      |   32   |    8    |      5       |
+======================================================
+Presto compilation completed successfully.
+Current design is now '/home/t107360216/Desktop/qiyou/2020_grad_cell/SME.db:SME'
+Loaded 1 design.
+Current design is 'SME'.
+SME
+current_design SME
+Current design is 'SME'.
+{SME}
+link
+
+  Linking design 'SME'
+  Using the following designs and libraries:
+  --------------------------------------------------------------------------
+  SME                         /home/t107360216/Desktop/qiyou/2020_grad_cell/SME.db
+  slow (library)              /home/t107360216/Desktop/cell_lib/CBDK_IC_Contest_v2.5/SynopsysDC/db/slow.db
+  dw_foundation.sldb (library) /usr/cad/synopsys/synthesis/cur/libraries/syn/dw_foundation.sldb
+
+1
+#Setting Clock Constraints
+source -echo -verbose SME.sdc
+# operating conditions and boundary conditions #
+set cycle 20.0
+20.0
+create_clock -name clk  -period $cycle   [get_ports  clk] 
+1
+set_dont_touch_network      [all_clocks]
+1
+set_fix_hold                [all_clocks]
+1
+set_clock_uncertainty  0.1  [all_clocks]
+1
+set_clock_latency      0.5  [all_clocks]
+1
+set_ideal_network           [get_ports clk]
+1
+#Don't touch the basic env setting as below
+set_input_delay  0   -clock clk [remove_from_collection [all_inputs] [get_ports clk]] -clock_fall
+1
+set_output_delay 0    -clock clk [all_outputs]  -clock_fall
+1
+set_load         1   [all_outputs]
+1
+set_drive        0.1   [all_inputs]
+1
+set_operating_conditions -max_library slow -max slow
+Using operating conditions 'slow' found in library 'slow'.
+1
+set_wire_load_model -name tsmc13_wl10 -library slow                        
+1
+set_max_fanout 20 [all_inputs]
+1
+1
+check_design
+ 
+****************************************
+check_design summary:
+Version:     Q-2019.12
+Date:        Wed Feb 22 23:51:34 2023
+****************************************
+
+                   Name                                            Total
+--------------------------------------------------------------------------------
+Cells                                                             259
+    Cells do not drive (LINT-1)                                   259
+--------------------------------------------------------------------------------
+
+Warning: In design 'SME', cell 'C44431' does not drive any nets. (LINT-1)
+Warning: In design 'SME', cell 'C44441' does not drive any nets. (LINT-1)
+Warning: In design 'SME', cell 'C44893' does not drive any nets. (LINT-1)
+Warning: In design 'SME', cell 'C44897' does not drive any nets. (LINT-1)
+Warning: In design 'SME', cell 'C44901' does not drive any nets. (LINT-1)
+Warning: In design 'SME', cell 'C44905' does not drive any nets. (LINT-1)
+Warning: In design 'SME', cell 'C44909' does not drive any nets. (LINT-1)
+Warning: In design 'SME', cell 'C44913' does not drive any nets. (LINT-1)
+Warning: In design 'SME', cell 'C44917' does not drive any nets. (LINT-1)
+Warning: In design 'SME', cell 'C44921' does not drive any nets. (LINT-1)
+Warning: In design 'SME', cell 'C44925' does not drive any nets. (LINT-1)
+Warning: In design 'SME', cell 'C44929' does not drive any nets. (LINT-1)
+Warning: In design 'SME', cell 'C44933' does not drive any nets. (LINT-1)
+Warning: In design 'SME', cell 'C44937' does not drive any nets. (LINT-1)
+Warning: In design 'SME', cell 'C44941' does not drive any nets. (LINT-1)
+Warning: In design 'SME', cell 'C44945' does not drive any nets. (LINT-1)
+Warning: In design 'SME', cell 'C44949' does not drive any nets. (LINT-1)
+Warning: In design 'SME', cell 'C44953' does not drive any nets. (LINT-1)
+Warning: In design 'SME', cell 'C44957' does not drive any nets. (LINT-1)
+Warning: In design 'SME', cell 'C44961' does not drive any nets. (LINT-1)
+Warning: In design 'SME', cell 'C44965' does not drive any nets. (LINT-1)
+Warning: In design 'SME', cell 'C44969' does not drive any nets. (LINT-1)
+Warning: In design 'SME', cell 'C44973' does not drive any nets. (LINT-1)
+Warning: In design 'SME', cell 'C44977' does not drive any nets. (LINT-1)
+Warning: In design 'SME', cell 'C44981' does not drive any nets. (LINT-1)
+Warning: In design 'SME', cell 'C44985' does not drive any nets. (LINT-1)
+Warning: In design 'SME', cell 'C44989' does not drive any nets. (LINT-1)
+Warning: In design 'SME', cell 'C44993' does not drive any nets. (LINT-1)
+Warning: In design 'SME', cell 'C44997' does not drive any nets. (LINT-1)
+Warning: In design 'SME', cell 'C45001' does not drive any nets. (LINT-1)
+Warning: In design 'SME', cell 'C45005' does not drive any nets. (LINT-1)
+Warning: In design 'SME', cell 'C45009' does not drive any nets. (LINT-1)
+Warning: In design 'SME', cell 'C45013' does not drive any nets. (LINT-1)
+Warning: In design 'SME', cell 'C45017' does not drive any nets. (LINT-1)
+Warning: In design 'SME', cell 'C45031' does not drive any nets. (LINT-1)
+Warning: In design 'SME', cell 'C45045' does not drive any nets. (LINT-1)
+Warning: In design 'SME', cell 'C45057' does not drive any nets. (LINT-1)
+Warning: In design 'SME', cell 'C45074' does not drive any nets. (LINT-1)
+Warning: In design 'SME', cell 'C45127' does not drive any nets. (LINT-1)
+Warning: In design 'SME', cell 'C45209' does not drive any nets. (LINT-1)
+Warning: In design 'SME', cell 'C45261' does not drive any nets. (LINT-1)
+Warning: In design 'SME', cell 'C45342' does not drive any nets. (LINT-1)
+Warning: In design 'SME', cell 'C45393' does not drive any nets. (LINT-1)
+Warning: In design 'SME', cell 'C45473' does not drive any nets. (LINT-1)
+Warning: In design 'SME', cell 'C45523' does not drive any nets. (LINT-1)
+Warning: In design 'SME', cell 'C45602' does not drive any nets. (LINT-1)
+Warning: In design 'SME', cell 'C45651' does not drive any nets. (LINT-1)
+Warning: In design 'SME', cell 'C45729' does not drive any nets. (LINT-1)
+Warning: In design 'SME', cell 'C45777' does not drive any nets. (LINT-1)
+Warning: In design 'SME', cell 'C45856' does not drive any nets. (LINT-1)
+Warning: In design 'SME', cell 'C45903' does not drive any nets. (LINT-1)
+Warning: In design 'SME', cell 'C45980' does not drive any nets. (LINT-1)
+Warning: In design 'SME', cell 'C46027' does not drive any nets. (LINT-1)
+Warning: In design 'SME', cell 'C46102' does not drive any nets. (LINT-1)
+Warning: In design 'SME', cell 'C46147' does not drive any nets. (LINT-1)
+Warning: In design 'SME', cell 'C46221' does not drive any nets. (LINT-1)
+Warning: In design 'SME', cell 'C46265' does not drive any nets. (LINT-1)
+Warning: In design 'SME', cell 'C46340' does not drive any nets. (LINT-1)
+Warning: In design 'SME', cell 'C46383' does not drive any nets. (LINT-1)
+Warning: In design 'SME', cell 'C46456' does not drive any nets. (LINT-1)
+Warning: In design 'SME', cell 'C46499' does not drive any nets. (LINT-1)
+Warning: In design 'SME', cell 'C46570' does not drive any nets. (LINT-1)
+Warning: In design 'SME', cell 'C46611' does not drive any nets. (LINT-1)
+Warning: In design 'SME', cell 'C46683' does not drive any nets. (LINT-1)
+Warning: In design 'SME', cell 'C46723' does not drive any nets. (LINT-1)
+Warning: In design 'SME', cell 'C46793' does not drive any nets. (LINT-1)
+Warning: In design 'SME', cell 'C46833' does not drive any nets. (LINT-1)
+Warning: In design 'SME', cell 'C46901' does not drive any nets. (LINT-1)
+Warning: In design 'SME', cell 'C46939' does not drive any nets. (LINT-1)
+Warning: In design 'SME', cell 'C47008' does not drive any nets. (LINT-1)
+Warning: In design 'SME', cell 'C47045' does not drive any nets. (LINT-1)
+Warning: In design 'SME', cell 'C47112' does not drive any nets. (LINT-1)
+Warning: In design 'SME', cell 'C47149' does not drive any nets. (LINT-1)
+Warning: In design 'SME', cell 'C47214' does not drive any nets. (LINT-1)
+Warning: In design 'SME', cell 'C47249' does not drive any nets. (LINT-1)
+Warning: In design 'SME', cell 'C47315' does not drive any nets. (LINT-1)
+Warning: In design 'SME', cell 'C47349' does not drive any nets. (LINT-1)
+Warning: In design 'SME', cell 'C47415' does not drive any nets. (LINT-1)
+Warning: In design 'SME', cell 'C47449' does not drive any nets. (LINT-1)
+Warning: In design 'SME', cell 'C47511' does not drive any nets. (LINT-1)
+Warning: In design 'SME', cell 'C47544' does not drive any nets. (LINT-1)
+Warning: In design 'SME', cell 'C47606' does not drive any nets. (LINT-1)
+Warning: In design 'SME', cell 'C47638' does not drive any nets. (LINT-1)
+Warning: In design 'SME', cell 'C47698' does not drive any nets. (LINT-1)
+Warning: In design 'SME', cell 'C47728' does not drive any nets. (LINT-1)
+Warning: In design 'SME', cell 'C47790' does not drive any nets. (LINT-1)
+Warning: In design 'SME', cell 'C47819' does not drive any nets. (LINT-1)
+Warning: In design 'SME', cell 'C47880' does not drive any nets. (LINT-1)
+Warning: In design 'SME', cell 'C47908' does not drive any nets. (LINT-1)
+Warning: In design 'SME', cell 'C47968' does not drive any nets. (LINT-1)
+Warning: In design 'SME', cell 'C47996' does not drive any nets. (LINT-1)
+Warning: In design 'SME', cell 'C48055' does not drive any nets. (LINT-1)
+Warning: In design 'SME', cell 'C48082' does not drive any nets. (LINT-1)
+Warning: In design 'SME', cell 'C48140' does not drive any nets. (LINT-1)
+Warning: In design 'SME', cell 'C48166' does not drive any nets. (LINT-1)
+Warning: In design 'SME', cell 'C48223' does not drive any nets. (LINT-1)
+Warning: In design 'SME', cell 'C48248' does not drive any nets. (LINT-1)
+Warning: In design 'SME', cell 'C48305' does not drive any nets. (LINT-1)
+Warning: In design 'SME', cell 'C48328' does not drive any nets. (LINT-1)
+Warning: In design 'SME', cell 'C48401' does not drive any nets. (LINT-1)
+Warning: In design 'SME', cell 'C48405' does not drive any nets. (LINT-1)
+Warning: In design 'SME', cell 'C48409' does not drive any nets. (LINT-1)
+Warning: In design 'SME', cell 'C48412' does not drive any nets. (LINT-1)
+Warning: In design 'SME', cell 'C48415' does not drive any nets. (LINT-1)
+Warning: In design 'SME', cell 'C48417' does not drive any nets. (LINT-1)
+Warning: In design 'SME', cell 'C48421' does not drive any nets. (LINT-1)
+Warning: In design 'SME', cell 'C48425' does not drive any nets. (LINT-1)
+Warning: In design 'SME', cell 'C48428' does not drive any nets. (LINT-1)
+Warning: In design 'SME', cell 'C48431' does not drive any nets. (LINT-1)
+Warning: In design 'SME', cell 'C48433' does not drive any nets. (LINT-1)
+Warning: In design 'SME', cell 'C48437' does not drive any nets. (LINT-1)
+Warning: In design 'SME', cell 'C48441' does not drive any nets. (LINT-1)
+Warning: In design 'SME', cell 'C48444' does not drive any nets. (LINT-1)
+Warning: In design 'SME', cell 'C48447' does not drive any nets. (LINT-1)
+Warning: In design 'SME', cell 'C48449' does not drive any nets. (LINT-1)
+Warning: In design 'SME', cell 'C48453' does not drive any nets. (LINT-1)
+Warning: In design 'SME', cell 'C48457' does not drive any nets. (LINT-1)
+Warning: In design 'SME', cell 'C48460' does not drive any nets. (LINT-1)
+Warning: In design 'SME', cell 'C48463' does not drive any nets. (LINT-1)
+Warning: In design 'SME', cell 'C48465' does not drive any nets. (LINT-1)
+Warning: In design 'SME', cell 'C48469' does not drive any nets. (LINT-1)
+Warning: In design 'SME', cell 'C48473' does not drive any nets. (LINT-1)
+Warning: In design 'SME', cell 'C48476' does not drive any nets. (LINT-1)
+Warning: In design 'SME', cell 'C48479' does not drive any nets. (LINT-1)
+Warning: In design 'SME', cell 'C48481' does not drive any nets. (LINT-1)
+Warning: In design 'SME', cell 'C48485' does not drive any nets. (LINT-1)
+Warning: In design 'SME', cell 'C48489' does not drive any nets. (LINT-1)
+Warning: In design 'SME', cell 'C48492' does not drive any nets. (LINT-1)
+Warning: In design 'SME', cell 'C48495' does not drive any nets. (LINT-1)
+Warning: In design 'SME', cell 'C48497' does not drive any nets. (LINT-1)
+Warning: In design 'SME', cell 'C48501' does not drive any nets. (LINT-1)
+Warning: In design 'SME', cell 'C48505' does not drive any nets. (LINT-1)
+Warning: In design 'SME', cell 'C48508' does not drive any nets. (LINT-1)
+Warning: In design 'SME', cell 'C48511' does not drive any nets. (LINT-1)
+Warning: In design 'SME', cell 'C48517' does not drive any nets. (LINT-1)
+Warning: In design 'SME', cell 'C48521' does not drive any nets. (LINT-1)
+Warning: In design 'SME', cell 'C48525' does not drive any nets. (LINT-1)
+Warning: In design 'SME', cell 'C48528' does not drive any nets. (LINT-1)
+Warning: In design 'SME', cell 'C48531' does not drive any nets. (LINT-1)
+Warning: In design 'SME', cell 'C48533' does not drive any nets. (LINT-1)
+Warning: In design 'SME', cell 'C48537' does not drive any nets. (LINT-1)
+Warning: In design 'SME', cell 'C48541' does not drive any nets. (LINT-1)
+Warning: In design 'SME', cell 'C48544' does not drive any nets. (LINT-1)
+Warning: In design 'SME', cell 'C48547' does not drive any nets. (LINT-1)
+Warning: In design 'SME', cell 'C48549' does not drive any nets. (LINT-1)
+Warning: In design 'SME', cell 'C48553' does not drive any nets. (LINT-1)
+Warning: In design 'SME', cell 'C48557' does not drive any nets. (LINT-1)
+Warning: In design 'SME', cell 'C48560' does not drive any nets. (LINT-1)
+Warning: In design 'SME', cell 'C48563' does not drive any nets. (LINT-1)
+Warning: In design 'SME', cell 'C48565' does not drive any nets. (LINT-1)
+Warning: In design 'SME', cell 'C48569' does not drive any nets. (LINT-1)
+Warning: In design 'SME', cell 'C48573' does not drive any nets. (LINT-1)
+Warning: In design 'SME', cell 'C48576' does not drive any nets. (LINT-1)
+Warning: In design 'SME', cell 'C48579' does not drive any nets. (LINT-1)
+Warning: In design 'SME', cell 'C48585' does not drive any nets. (LINT-1)
+Warning: In design 'SME', cell 'C48589' does not drive any nets. (LINT-1)
+Warning: In design 'SME', cell 'C48593' does not drive any nets. (LINT-1)
+Warning: In design 'SME', cell 'C48596' does not drive any nets. (LINT-1)
+Warning: In design 'SME', cell 'C48599' does not drive any nets. (LINT-1)
+Warning: In design 'SME', cell 'C48601' does not drive any nets. (LINT-1)
+Warning: In design 'SME', cell 'C48605' does not drive any nets. (LINT-1)
+Warning: In design 'SME', cell 'C48609' does not drive any nets. (LINT-1)
+Warning: In design 'SME', cell 'C48612' does not drive any nets. (LINT-1)
+Warning: In design 'SME', cell 'C48615' does not drive any nets. (LINT-1)
+Warning: In design 'SME', cell 'C48617' does not drive any nets. (LINT-1)
+Warning: In design 'SME', cell 'C48621' does not drive any nets. (LINT-1)
+Warning: In design 'SME', cell 'C48625' does not drive any nets. (LINT-1)
+Warning: In design 'SME', cell 'C48628' does not drive any nets. (LINT-1)
+Warning: In design 'SME', cell 'C48631' does not drive any nets. (LINT-1)
+Warning: In design 'SME', cell 'C48637' does not drive any nets. (LINT-1)
+Warning: In design 'SME', cell 'C48641' does not drive any nets. (LINT-1)
+Warning: In design 'SME', cell 'C48645' does not drive any nets. (LINT-1)
+Warning: In design 'SME', cell 'C48648' does not drive any nets. (LINT-1)
+Warning: In design 'SME', cell 'C48651' does not drive any nets. (LINT-1)
+Warning: In design 'SME', cell 'C48653' does not drive any nets. (LINT-1)
+Warning: In design 'SME', cell 'C48657' does not drive any nets. (LINT-1)
+Warning: In design 'SME', cell 'C48661' does not drive any nets. (LINT-1)
+Warning: In design 'SME', cell 'C48664' does not drive any nets. (LINT-1)
+Warning: In design 'SME', cell 'C48667' does not drive any nets. (LINT-1)
+Warning: In design 'SME', cell 'C48669' does not drive any nets. (LINT-1)
+Warning: In design 'SME', cell 'C48673' does not drive any nets. (LINT-1)
+Warning: In design 'SME', cell 'C48677' does not drive any nets. (LINT-1)
+Warning: In design 'SME', cell 'C48680' does not drive any nets. (LINT-1)
+Warning: In design 'SME', cell 'C48683' does not drive any nets. (LINT-1)
+Warning: In design 'SME', cell 'C48689' does not drive any nets. (LINT-1)
+Warning: In design 'SME', cell 'C48693' does not drive any nets. (LINT-1)
+Warning: In design 'SME', cell 'C48697' does not drive any nets. (LINT-1)
+Warning: In design 'SME', cell 'C48700' does not drive any nets. (LINT-1)
+Warning: In design 'SME', cell 'C48703' does not drive any nets. (LINT-1)
+Warning: In design 'SME', cell 'C48705' does not drive any nets. (LINT-1)
+Warning: In design 'SME', cell 'C48709' does not drive any nets. (LINT-1)
+Warning: In design 'SME', cell 'C48713' does not drive any nets. (LINT-1)
+Warning: In design 'SME', cell 'C48716' does not drive any nets. (LINT-1)
+Warning: In design 'SME', cell 'C48719' does not drive any nets. (LINT-1)
+Warning: In design 'SME', cell 'C48721' does not drive any nets. (LINT-1)
+Warning: In design 'SME', cell 'C48725' does not drive any nets. (LINT-1)
+Warning: In design 'SME', cell 'C48729' does not drive any nets. (LINT-1)
+Warning: In design 'SME', cell 'C48732' does not drive any nets. (LINT-1)
+Warning: In design 'SME', cell 'C48735' does not drive any nets. (LINT-1)
+Warning: In design 'SME', cell 'C48741' does not drive any nets. (LINT-1)
+Warning: In design 'SME', cell 'C48745' does not drive any nets. (LINT-1)
+Warning: In design 'SME', cell 'C48749' does not drive any nets. (LINT-1)
+Warning: In design 'SME', cell 'C48752' does not drive any nets. (LINT-1)
+Warning: In design 'SME', cell 'C48755' does not drive any nets. (LINT-1)
+Warning: In design 'SME', cell 'C48762' does not drive any nets. (LINT-1)
+Warning: In design 'SME', cell 'C48766' does not drive any nets. (LINT-1)
+Warning: In design 'SME', cell 'C48770' does not drive any nets. (LINT-1)
+Warning: In design 'SME', cell 'C48773' does not drive any nets. (LINT-1)
+Warning: In design 'SME', cell 'C48776' does not drive any nets. (LINT-1)
+Warning: In design 'SME', cell 'C48778' does not drive any nets. (LINT-1)
+Warning: In design 'SME', cell 'C48782' does not drive any nets. (LINT-1)
+Warning: In design 'SME', cell 'C48786' does not drive any nets. (LINT-1)
+Warning: In design 'SME', cell 'C48789' does not drive any nets. (LINT-1)
+Warning: In design 'SME', cell 'C48792' does not drive any nets. (LINT-1)
+Warning: In design 'SME', cell 'C48794' does not drive any nets. (LINT-1)
+Warning: In design 'SME', cell 'C48798' does not drive any nets. (LINT-1)
+Warning: In design 'SME', cell 'C48802' does not drive any nets. (LINT-1)
+Warning: In design 'SME', cell 'C48805' does not drive any nets. (LINT-1)
+Warning: In design 'SME', cell 'C48808' does not drive any nets. (LINT-1)
+Warning: In design 'SME', cell 'C48810' does not drive any nets. (LINT-1)
+Warning: In design 'SME', cell 'C48814' does not drive any nets. (LINT-1)
+Warning: In design 'SME', cell 'C48818' does not drive any nets. (LINT-1)
+Warning: In design 'SME', cell 'C48821' does not drive any nets. (LINT-1)
+Warning: In design 'SME', cell 'C48824' does not drive any nets. (LINT-1)
+Warning: In design 'SME', cell 'C48831' does not drive any nets. (LINT-1)
+Warning: In design 'SME', cell 'C48835' does not drive any nets. (LINT-1)
+Warning: In design 'SME', cell 'C48839' does not drive any nets. (LINT-1)
+Warning: In design 'SME', cell 'C48842' does not drive any nets. (LINT-1)
+Warning: In design 'SME', cell 'C48845' does not drive any nets. (LINT-1)
+Warning: In design 'SME', cell 'C48852' does not drive any nets. (LINT-1)
+Warning: In design 'SME', cell 'C48856' does not drive any nets. (LINT-1)
+Warning: In design 'SME', cell 'C48860' does not drive any nets. (LINT-1)
+Warning: In design 'SME', cell 'C48863' does not drive any nets. (LINT-1)
+Warning: In design 'SME', cell 'C48866' does not drive any nets. (LINT-1)
+Warning: In design 'SME', cell 'C48873' does not drive any nets. (LINT-1)
+Warning: In design 'SME', cell 'C48877' does not drive any nets. (LINT-1)
+Warning: In design 'SME', cell 'C48881' does not drive any nets. (LINT-1)
+Warning: In design 'SME', cell 'C48884' does not drive any nets. (LINT-1)
+Warning: In design 'SME', cell 'C48887' does not drive any nets. (LINT-1)
+Warning: In design 'SME', cell 'C48894' does not drive any nets. (LINT-1)
+Warning: In design 'SME', cell 'C48898' does not drive any nets. (LINT-1)
+Warning: In design 'SME', cell 'C48902' does not drive any nets. (LINT-1)
+Warning: In design 'SME', cell 'C48905' does not drive any nets. (LINT-1)
+Warning: In design 'SME', cell 'C48908' does not drive any nets. (LINT-1)
+Warning: In design 'SME', cell 'C48915' does not drive any nets. (LINT-1)
+Warning: In design 'SME', cell 'C48919' does not drive any nets. (LINT-1)
+Warning: In design 'SME', cell 'C48923' does not drive any nets. (LINT-1)
+Warning: In design 'SME', cell 'C48926' does not drive any nets. (LINT-1)
+Warning: In design 'SME', cell 'C48929' does not drive any nets. (LINT-1)
+Warning: In design 'SME', cell 'C48936' does not drive any nets. (LINT-1)
+Warning: In design 'SME', cell 'C48940' does not drive any nets. (LINT-1)
+Warning: In design 'SME', cell 'C48944' does not drive any nets. (LINT-1)
+Warning: In design 'SME', cell 'C48947' does not drive any nets. (LINT-1)
+Warning: In design 'SME', cell 'C48950' does not drive any nets. (LINT-1)
+Warning: In design 'SME', cell 'C48958' does not drive any nets. (LINT-1)
+Warning: In design 'SME', cell 'C48962' does not drive any nets. (LINT-1)
+Warning: In design 'SME', cell 'C48966' does not drive any nets. (LINT-1)
+Warning: In design 'SME', cell 'C48969' does not drive any nets. (LINT-1)
+Warning: In design 'SME', cell 'C48972' does not drive any nets. (LINT-1)
+1
+set high_fanout_net_threshold 0
+0
+uniquify
+1
+set_fix_multiple_port_nets -all -buffer_constants [get_designs *]
+1
+#Synthesis all design
+#compile -map_effort high -area_effort high
+#compile -map_effort high -area_effort high -inc
+compile
+Information: Checking out the license 'DesignWare'. (SEC-104)
+Information: Evaluating DesignWare library utilization. (UISN-27)
+
+============================================================================
+| DesignWare Building Block Library  |         Version         | Available |
+============================================================================
+| Basic DW Building Blocks           | Q-2019.12-DWBB_201912.0 |     *     |
+| Licensed DW Building Blocks        | Q-2019.12-DWBB_201912.0 |     *     |
+============================================================================
+
+
+Information: There are 259 potential problems in your design. Please run 'check_design' for more information. (LINT-99)
+
+
+
+  Beginning Pass 1 Mapping
+  ------------------------
+  Processing 'SME'
+Information: Added key list 'DesignWare' to design 'SME'. (DDB-72)
+Information: The register 'current_state_reg[3]' is a constant and will be removed. (OPT-1206)
+
+  Updating timing information
+Information: Updating design information... (UID-85)
+
+  Beginning Implementation Selection
+  ----------------------------------
+  Mapping 'SME_DW_cmp_0'
+  Mapping 'SME_DW_cmp_1'
+  Processing 'SME_DW01_inc_0'
+  Processing 'SME_DW01_cmp6_0'
+  Mapping 'SME_DW_cmp_2'
+  Processing 'SME_DW01_cmp6_1'
+  Processing 'SME_DW01_add_0'
+  Mapping 'SME_DW_cmp_4'
+  Processing 'SME_DW01_cmp6_2'
+  Processing 'SME_DW01_add_1'
+  Mapping 'SME_DW_cmp_5'
+  Mapping 'SME_DW_cmp_6'
+  Processing 'SME_DW01_cmp6_3'
+  Processing 'SME_DW01_add_2'
+  Mapping 'SME_DW_cmp_7'
+  Mapping 'SME_DW_cmp_8'
+  Processing 'SME_DW01_cmp6_4'
+  Processing 'SME_DW01_add_3'
+  Mapping 'SME_DW_cmp_9'
+  Mapping 'SME_DW_cmp_10'
+  Processing 'SME_DW01_cmp6_5'
+  Processing 'SME_DW01_add_4'
+  Mapping 'SME_DW_cmp_11'
+  Mapping 'SME_DW_cmp_12'
+  Processing 'SME_DW01_cmp6_6'
+  Processing 'SME_DW01_add_5'
+  Mapping 'SME_DW_cmp_13'
+  Mapping 'SME_DW_cmp_14'
+  Processing 'SME_DW01_cmp6_7'
+  Processing 'SME_DW01_add_6'
+  Mapping 'SME_DW_cmp_15'
+  Mapping 'SME_DW_cmp_16'
+  Processing 'SME_DW01_cmp6_8'
+  Processing 'SME_DW01_add_7'
+  Mapping 'SME_DW_cmp_17'
+  Mapping 'SME_DW_cmp_18'
+  Processing 'SME_DW01_cmp6_9'
+  Processing 'SME_DW01_add_8'
+  Mapping 'SME_DW_cmp_19'
+  Mapping 'SME_DW_cmp_20'
+  Processing 'SME_DW01_cmp6_10'
+  Processing 'SME_DW01_add_9'
+  Mapping 'SME_DW_cmp_21'
+  Mapping 'SME_DW_cmp_22'
+  Processing 'SME_DW01_cmp6_11'
+  Processing 'SME_DW01_add_10'
+  Mapping 'SME_DW_cmp_23'
+  Mapping 'SME_DW_cmp_24'
+  Processing 'SME_DW01_cmp6_12'
+  Processing 'SME_DW01_add_11'
+  Mapping 'SME_DW_cmp_25'
+  Mapping 'SME_DW_cmp_26'
+  Processing 'SME_DW01_cmp6_13'
+  Processing 'SME_DW01_add_12'
+  Mapping 'SME_DW_cmp_27'
+  Mapping 'SME_DW_cmp_28'
+  Processing 'SME_DW01_cmp6_14'
+  Processing 'SME_DW01_add_13'
+  Mapping 'SME_DW_cmp_29'
+  Mapping 'SME_DW_cmp_30'
+  Processing 'SME_DW01_cmp6_15'
+  Processing 'SME_DW01_add_14'
+  Mapping 'SME_DW_cmp_31'
+  Mapping 'SME_DW_cmp_32'
+  Processing 'SME_DW01_cmp6_16'
+  Processing 'SME_DW01_add_15'
+  Mapping 'SME_DW_cmp_33'
+  Mapping 'SME_DW_cmp_34'
+  Processing 'SME_DW01_cmp6_17'
+  Processing 'SME_DW01_add_16'
+  Mapping 'SME_DW_cmp_35'
+  Mapping 'SME_DW_cmp_36'
+  Processing 'SME_DW01_cmp6_18'
+  Processing 'SME_DW01_add_17'
+  Mapping 'SME_DW_cmp_37'
+  Mapping 'SME_DW_cmp_38'
+  Processing 'SME_DW01_cmp6_19'
+  Processing 'SME_DW01_add_18'
+  Mapping 'SME_DW_cmp_39'
+  Mapping 'SME_DW_cmp_40'
+  Processing 'SME_DW01_cmp6_20'
+  Processing 'SME_DW01_add_19'
+  Mapping 'SME_DW_cmp_41'
+  Mapping 'SME_DW_cmp_42'
+  Processing 'SME_DW01_cmp6_21'
+  Processing 'SME_DW01_add_20'
+  Mapping 'SME_DW_cmp_43'
+  Mapping 'SME_DW_cmp_44'
+  Processing 'SME_DW01_cmp6_22'
+  Processing 'SME_DW01_add_21'
+  Mapping 'SME_DW_cmp_45'
+  Mapping 'SME_DW_cmp_46'
+  Processing 'SME_DW01_cmp6_23'
+  Processing 'SME_DW01_add_22'
+  Mapping 'SME_DW_cmp_47'
+  Mapping 'SME_DW_cmp_48'
+  Processing 'SME_DW01_cmp6_24'
+  Processing 'SME_DW01_add_23'
+  Mapping 'SME_DW_cmp_49'
+  Mapping 'SME_DW_cmp_50'
+  Processing 'SME_DW01_cmp6_25'
+  Processing 'SME_DW01_add_24'
+  Mapping 'SME_DW_cmp_51'
+  Mapping 'SME_DW_cmp_52'
+  Processing 'SME_DW01_cmp6_26'
+  Processing 'SME_DW01_add_25'
+  Mapping 'SME_DW_cmp_53'
+  Mapping 'SME_DW_cmp_54'
+  Processing 'SME_DW01_cmp6_27'
+  Processing 'SME_DW01_add_26'
+  Mapping 'SME_DW_cmp_55'
+  Mapping 'SME_DW_cmp_56'
+  Processing 'SME_DW01_cmp6_28'
+  Processing 'SME_DW01_add_27'
+  Mapping 'SME_DW_cmp_57'
+  Mapping 'SME_DW_cmp_58'
+  Processing 'SME_DW01_cmp6_29'
+  Processing 'SME_DW01_add_28'
+  Mapping 'SME_DW_cmp_59'
+  Mapping 'SME_DW_cmp_60'
+  Processing 'SME_DW01_cmp6_30'
+  Processing 'SME_DW01_add_29'
+  Mapping 'SME_DW_cmp_61'
+  Mapping 'SME_DW_cmp_62'
+  Mapping 'SME_DW_cmp_63'
+  Mapping 'SME_DW_cmp_64'
+  Processing 'SME_DW01_cmp6_31'
+  Mapping 'SME_DW_cmp_66'
+  Processing 'SME_DW01_inc_1'
+  Building model 'DW01_NAND2'
+  Processing 'DW01_NAND2'
+  Building model 'DW01_add_width7' (rpl)
+  Processing 'DW01_add_width7'
+  Building model 'DW01_dec_width7' (rpl)
+  Processing 'DW01_dec_width7'
+  Processing 'SME_DW01_add_30'
+  Processing 'SME_DW01_dec_0'
+
+  Beginning Mapping Optimizations  (Medium effort)
+  -------------------------------
+  Mapping Optimization (Phase 1)
+
+                                  TOTAL                                                  
+   ELAPSED            WORST NEG   SETUP    DESIGN                              MIN DELAY 
+    TIME      AREA      SLACK     COST    RULE COST         ENDPOINT             COST    
+  --------- --------- --------- --------- --------- ------------------------- -----------
+    0:00:36   88809.7      0.00       0.0      81.4                                0.00  
+    0:00:36   88809.7      0.00       0.0      81.4                                0.00  
+    0:00:36   88809.7      0.00       0.0      81.4                                0.00  
+    0:00:36   88809.7      0.00       0.0      81.4                                0.00  
+    0:00:37   88809.7      0.00       0.0      81.4                                0.00  
+    0:00:38   58731.7      0.00       0.0      75.8                                0.00  
+    0:00:38   58701.2      0.00       0.0      75.8                                0.00  
+    0:00:39   58701.2      0.00       0.0      66.2                                0.00  
+    0:00:39   58701.2      0.00       0.0      66.2                                0.00  
+    0:00:39   58701.2      0.00       0.0      66.2                                0.00  
+    0:00:39   58701.2      0.00       0.0      66.2                                0.00  
+    0:00:39   58701.2      0.00       0.0      66.2                                0.00  
+    0:00:39   58779.3      0.00       0.0      39.5                                0.00  
+    0:00:40   58830.2      0.00       0.0      32.0                                0.00  
+    0:00:40   58869.2      0.00       0.0      26.8                                0.00  
+    0:00:40   58894.7      0.00       0.0      23.1                                0.00  
+    0:00:40   58923.5      0.00       0.0      19.3                                0.00  
+    0:00:40   58945.6      0.00       0.0      15.9                                0.00  
+    0:00:40   58971.1      0.00       0.0      12.8                                0.00  
+    0:00:40   58988.0      0.00       0.0      10.3                                0.00  
+    0:00:40   59001.6      0.00       0.0       8.2                                0.00  
+    0:00:40   59001.6      0.00       0.0       8.2                                0.00  
+
+
+
+  Beginning Delay Optimization Phase
+  ----------------------------------
+
+                                  TOTAL                                                  
+   ELAPSED            WORST NEG   SETUP    DESIGN                              MIN DELAY 
+    TIME      AREA      SLACK     COST    RULE COST         ENDPOINT             COST    
+  --------- --------- --------- --------- --------- ------------------------- -----------
+    0:00:40   59001.6      0.00       0.0       8.2                                0.00  
+    0:00:40   59001.6      0.00       0.0       8.2                                0.00  
+    0:00:42   56796.7      0.00       0.0     170.8                                0.00  
+
+
+  Beginning Design Rule Fixing  (max_transition)  (max_capacitance)
+  ----------------------------
+
+                                  TOTAL                                                  
+   ELAPSED            WORST NEG   SETUP    DESIGN                              MIN DELAY 
+    TIME      AREA      SLACK     COST    RULE COST         ENDPOINT             COST    
+  --------- --------- --------- --------- --------- ------------------------- -----------
+    0:00:43   56796.7      0.00       0.0     170.8                                0.00  
+    0:00:43   57100.5      0.00       0.0      84.6 net84863                       0.00  
+    0:00:43   57199.0      0.00       0.0      53.8 net84862                       0.00  
+    0:00:43   57292.3      0.00       0.0      39.4 net84792                       0.00  
+    0:00:44   57385.7      0.00       0.0      35.8 stringdata[15][7]              0.00  
+    0:00:44   57472.3      0.00       0.0      34.4 stringdata[14][2]              0.00  
+    0:00:44   57603.0      0.00       0.0      30.6 net84783                       0.00  
+    0:00:45   57684.4      0.00       0.0      21.4 stringdata[19][7]              0.00  
+    0:00:45   57767.6      0.00       0.0      18.0 stringdata[20][6]              0.00  
+    0:00:45   57801.6      0.00       0.0       9.8 stringdata[17][2]              0.00  
+    0:00:45   57852.5      0.00       0.0       4.7 net84959                       0.00  
+    0:00:46   57855.9      0.00       0.0       4.4 net84984                       0.00  
+    0:00:46   57910.2      0.00       0.0       0.0                                0.00  
+
+
+  Beginning Area-Recovery Phase  (cleanup)
+  -----------------------------
+
+                                  TOTAL                                                  
+   ELAPSED            WORST NEG   SETUP    DESIGN                              MIN DELAY 
+    TIME      AREA      SLACK     COST    RULE COST         ENDPOINT             COST    
+  --------- --------- --------- --------- --------- ------------------------- -----------
+    0:00:46   57910.2      0.00       0.0       0.0                                0.00  
+    0:00:46   57910.2      0.00       0.0       0.0                                0.00  
+    0:00:46   57438.3      0.00       0.0       0.0                                0.00  
+    0:00:47   57044.5      0.00       0.0       0.0                                0.00  
+    0:00:47   56677.9      0.00       0.0       0.0                                0.00  
+    0:00:47   56374.0      0.00       0.0       0.0                                0.00  
+    0:00:47   56085.5      0.00       0.0       0.0                                0.00  
+    0:00:48   55871.6      0.00       0.0       0.0                                0.00  
+    0:00:48   55754.5      0.00       0.0       0.0                                0.00  
+    0:00:48   55659.4      0.00       0.0       0.0                                0.00  
+    0:00:48   55579.7      0.00       0.0       0.0                                0.00  
+    0:00:49   55505.0      0.00       0.0       0.0                                0.00  
+    0:00:49   55440.5      0.00       0.0       0.0                                0.00  
+    0:00:49   55406.5      0.00       0.0       0.0                                0.00  
+    0:00:49   55406.5      0.00       0.0       0.0                                0.00  
+    0:00:49   55406.5      0.00       0.0       0.0                                0.00  
+    0:00:49   55372.6      0.00       0.0       0.0                                0.00  
+    0:00:49   55372.6      0.00       0.0       0.0                                0.00  
+    0:00:49   55372.6      0.00       0.0       0.0                                0.00  
+    0:00:49   55372.6      0.00       0.0       0.0                                0.00  
+    0:00:49   55372.6      0.00       0.0       0.0                                0.00  
+    0:00:49   55372.6      0.00       0.0       0.0                                0.00  
+    0:00:49   55372.6      0.00       0.0       0.0                                0.00  
+Loading db file '/home/t107360216/Desktop/cell_lib/CBDK_IC_Contest_v2.5/SynopsysDC/db/slow.db'
+
+
+Note: Symbol # after min delay cost means estimated hold TNS across all active scenarios 
+
+
+  Optimization Complete
+  ---------------------
+1
+write -format ddc     -hierarchy -output "SME_syn.ddc"
+Writing ddc file 'SME_syn.ddc'.
+1
+write_sdf -version 1.0  SME_syn.sdf
+Information: Annotated 'cell' delays are assumed to include load delay. (UID-282)
+Information: Writing timing information to file '/home/t107360216/Desktop/qiyou/2020_grad_cell/SME_syn.sdf'. (WT-3)
+Information: Updating design information... (UID-85)
+1
+write -format verilog -hierarchy -output SME_syn.v
+Writing verilog file '/home/t107360216/Desktop/qiyou/2020_grad_cell/SME_syn.v'.
+1
+report_area > area.log
+report_timing > timing.log
+report_qor   >  SME_syn.qor
+design_vision> Current design is 'SME'.
+4.1
+Current design is 'SME'.
+design_vision> Loading db file '/usr/cad/synopsys/synthesis/cur/libraries/syn/generic.sdb'
+
+design_vision> 
+design_vision> 
+design_vision> exit
+
+Thank you...
